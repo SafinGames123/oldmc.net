@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    iframe{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<img src="logo_pps.png">
+<button onclick="play()">Play</button>
+<script>
+  function play(){
+    addhtml("<iframe src='https://safingames123.github.io/reimagined-system/classic.minecraft.net/index.html'></iframe>")
+  }
+  function addhtml(html){
+    document.body.innerHTML=document.body.innerHTML+html;
+  }
+</script>
+</body>
+</html>
